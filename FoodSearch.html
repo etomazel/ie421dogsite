@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html> 
-<title>W3.CSS Template</title>
+<title>Doggle Search</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,49 +14,45 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Doggo</b></a>
-  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-text-blue w3-hover-blue"><b><i class="fa fa-map-marker w3-margin-right"></i>Doggo</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-blue w3-text-grey"><i class="fa fa-home"></i></a>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
   <img class="w3-image" src="./dogpic.jpg" alt="London" width="1500" height="700">
-  <div class="w3-display-middle" style="width:35%">
-    <div class="w3-bar w3">
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>FOOD</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>DISCUSSION BOARD</button>
-    </div>
+  <div class="w3-display-middle " style="width:40%">
+  </header>
 
     <!-- Tabs -->
     <div id="Flight" class="w3-container w3-white w3-padding- myLink">
       <h3>Find Doggo Safe Foods!</h3>
       <div class="w3-row-padding" style="margin:0 -16px;">
         <div class="w3-half">
-          <label>Search Foods</label>
-          <input class="w3-input w3-border" type="text" placeholder="">
-          <p><button class="w3-button w3-red">Search</button></p>
-         
-                <div id="Discussion Board" class="w3-container w3-white w3-padding-16 myLink">
-                    <h3>Read stories from our users</h3>
-                    <div class="w3-row-padding" style="margin:0 -16px;">
-                        <div class="w3-half">
-                          <label>Breed</label>
+          <label class="fa fa-search w3-margin-right"> Search Foods</label>
+          <div class="w3-container w3-large"><i"></i>
 
-                          <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
+
+          <input class="w3-input w3-border"  type="text" placeholder="food...">
+          <p><button class="w3-button w3-blue">Search</button></p>
+          <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"></button>
+          <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"></i></button>
+        </div>
+        
 
               
         </div>
 
   
 
-</header>
+
 
 
   
 <!-- End page content -->
 </div>
 
-<!-- Footer -->
+<!-- Footer 
 <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
@@ -69,7 +65,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   </div>
   
 </footer>
-
+-->
 <script>
 // Tabs
 function openLink(evt, linkName) {
@@ -80,10 +76,10 @@ function openLink(evt, linkName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    tablinks[i].className = tablinks[i].className.replace(" w3-white w3-text-black", "");
   }
   document.getElementById(linkName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
+  evt.currentTarget.className += " w3-white";
 }
 
 // Click on the first tablink on load
