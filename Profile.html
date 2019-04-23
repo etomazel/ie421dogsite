@@ -17,18 +17,37 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Search"><i class="fa fa-search"></i></a>
   <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+      <button class="w3-button w3-padding-large" title="Account Settings"><i class="fa fa-user"></i><span    
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+        <a href="#" class="w3-bar-item w3-button">Account Settings</a>
+        <a href="#" class="w3-bar-item w3-button">Edit Profile</a>
+        <a href="#" class="w3-bar-item w3-button">Create Event</a>
+        <a href="#" class="w3-bar-item w3-button">Create New Group</a>
+        
+      </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-padding-large" title="Messages"><i class="fa fa-envelope"></i><span    
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+        <a href="#" class="w3-bar-item w3-button">New Message</a>
+        <a href="#" class="w3-bar-item w3-button">Inbox</a>
+        <a href="#" class="w3-bar-item w3-button">Sent Mail</a>
+        <a href="#" class="w3-bar-item w3-button">Junk</a>
+      </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span  
     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
       <a href="#" class="w3-bar-item w3-button">One new friend request</a>
       <a href="#" class="w3-bar-item w3-button">Jake Isaacs posted on your wall!</a>
       <a href="#" class="w3-bar-item w3-button">Jake likes your post!</a>
     </div>
-  </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-padding-large" title="Search"><i class="fa fa-search"></i><span    
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+          <a href="#" class="w3-bar-item w3-button">Find Friends</a>
+          <a href="#" class="w3-bar-item w3-button">Search Groups</a>
+          <a href="#" class="w3-bar-item w3-button">Search Posts</a>
+        </div>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
     <img src="/IMG_0429.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
   </a>
@@ -67,34 +86,29 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
         <div class="w3-white">
           <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
           <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
+            <p>Dog Gang</p>
           </div>
           <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
           <div id="Demo2" class="w3-hide w3-container">
-            <p>Some other text..</p>
+            <p>Dog Party Saturday @ Noon</p>
           </div>
           <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
           <div id="Demo3" class="w3-hide w3-container">
          <div class="w3-row-padding">
          <br>
            <div class="w3-half">
-             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+             <img src="/IMG_0429.jpg" style="width:100%" class="w3-margin-bottom">
            </div>
            <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+             <img src="/burger.jpg" style="width:100%" class="w3-margin-bottom">
            </div>
            <div class="w3-half">
-             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
+             <img src="/DSC01138.jpg" style="width:100%" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="/dogpic.jpg" style="width:100%" class="w3-margin-bottom">
+
+            </div>
          </div>
           </div>
         </div>      
@@ -137,7 +151,8 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
             <div class="w3-container w3-padding">
               <h6 class="w3-opacity">Let your friends know what's going on!</h6>
               <p contenteditable="true" class="w3-border w3-padding">Huge doggo party at World's Fair Park!</p>
-              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-photo"></i> Upload Photo</button>  
             </div>
           </div>
         </div>
@@ -159,7 +174,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
         </div>
         <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
         <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-edit"></i>  Edit</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-edit"></i>  Edit</button>
       </div>
       
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
