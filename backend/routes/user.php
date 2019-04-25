@@ -20,7 +20,7 @@ $app->post('/api/user', function ($request, $response, $args) { //POST example
  	$pdo =$this->pdo;
 	$params = $request->getParsedBody();
 	$username = $params['username'];
-	$password = $password['password'];
+	$password = $params['password'];
 	$email = $params['email'];
     $first = $params['first_name'];
 	$middle = $params['middle_name'];
