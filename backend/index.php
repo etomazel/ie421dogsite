@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 $configuration = [
     'settings' => [
-        'displayErrorDetails' => false
+        'displayErrorDetails' => true
     ]
 ];
 
@@ -14,9 +14,9 @@ $app = new \Slim\App($c);
 
 $container = $app->getContainer();
 $container['pdo'] = function ($c) {
-    $dsn = 'mysql:host=mati.engr.utk.edu;dbname=rzhou7; port=33060;charset=utf8'; // replace Localhost with your mysql host ip and replace dbName with your database name
-    $usr = 'rzhou7'; //replace dbUSERNAME with your database username
-    $pwd = 'rzhou7@421'; //replace dbUSERNAME with your database password
+    $dsn = 'mysql:host=mati.engr.utk.edu;dbname=jisaacs5; port=33060;charset=utf8'; // replace Localhost with your mysql host ip and replace dbName with your database name
+    $usr = 'jisaacs5'; //replace dbUSERNAME with your database username
+    $pwd = 'jisaacs5@421'; //replace dbUSERNAME with your database password
     $pdo = new \Slim\PDO\Database($dsn, $usr, $pwd);
     return $pdo;
 };
