@@ -16,16 +16,23 @@
 <script src="https://use.typekit.net/hoy3lrg.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+<title>Doggle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style class="cp-pen-styles">body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #27ae60;
+  background: #131414;
   font-family: "proxima-nova", "Source Sans Pro", sans-serif;
   font-size: 1em;
   letter-spacing: 0.1px;
-  color: #32465a;
+  color: #303033;
   text-rendering: optimizeLegibility;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
@@ -700,12 +707,50 @@ Website: http://emilcarlsson.se/
 
 -->
 
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+     <a href="/frontend/Profile.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-margin-right"></i>Home</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+         <button class="w3-button w3-padding-large" title="Account Settings"><i class="fa fa-user"></i><span    
+         <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+           <a href="#" class="w3-bar-item w3-button">Account Settings</a>
+           <a href="#" class="w3-bar-item w3-button">Edit Profile</a>
+           <a href="#" class="w3-bar-item w3-button">Create Event</a>
+           <a href="#" class="w3-bar-item w3-button">Create New Group</a>
+           
+         </div>
+     <div class="w3-dropdown-hover w3-hide-small">
+         <button class="w3-button w3-padding-large w3-theme-d4" title="Messages"><i class="fa fa-envelope"></i>  
+           <a href="/frontend/chat-server.html" class="w3-bar-item w3-button"></a>
+         </div>
+
+     <div class="w3-dropdown-hover w3-hide-small">
+       <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span  
+       <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+         <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+         <a href="#" class="w3-bar-item w3-button">Jake Isaacs posted on your wall!</a>
+         <a href="#" class="w3-bar-item w3-button">Jake likes your post!</a>
+       </div>
+       <div class="w3-dropdown-hover w3-hide-small">
+           <button class="w3-button w3-padding-large" title="Search"><i class="fa fa-search"></i><span    
+           <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+             <a href="#" class="w3-bar-item w3-button">Find Friends</a>
+             <a href="#" class="w3-bar-item w3-button">Search Groups</a>
+             <a href="#" class="w3-bar-item w3-button">Search Posts</a>
+           </div>
+     <a href="/frontend/nickprofile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+       <img src="./images/IMG_0429.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+     </a>
+    </div>
+   </div>
+
 <div id="frame">
 	<div id="sidepanel">
 		<div id="profile">
 			<div class="wrap">
-				<img id="profile-img" src="http://emilcarlsson.se/assets/mikeross.png" class="online" alt="" />
-				<p>Mike Ross</p>
+				<img id="profile-img" src="./images/andersonpaak.jpg" class="online" alt="" />
+				<p>Anderson Paak</p>
 				<i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
 				<div id="status-options">
 					<ul>
@@ -734,50 +779,50 @@ Website: http://emilcarlsson.se/
 				<li class="contact">
 					<div class="wrap">
 						<span class="contact-status online"></span>
-						<img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
+						<img src="./images/mac-miller-2.jpg" alt="" />
 						<div class="meta">
-							<p class="name">Louis Litt</p>
-							<p class="preview">You just got LITT up, Mike.</p>
+							<p class="name">Mac Miller</p>
+							<p class="preview-center">Mac, I miss you dawg.</p>
 						</div>
 					</div>
 				</li>
 				<li class="contact active">
 					<div class="wrap">
 						<span class="contact-status busy"></span>
-						<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+						<img src="./images/drake.jpg" alt="" />
 						<div class="meta">
-							<p class="name">Barry McKokiner</p>
-							<p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+							<p class="name">Drizzy</p>
+							<p class="preview">Yo will you let the dog out?</p>
 						</div>
 					</div>
 				</li>
 				<li class="contact">
 					<div class="wrap">
 						<span class="contact-status away"></span>
-						<img src="http://emilcarlsson.se/assets/rachelzane.png" alt="" />
+						<img src="./images/lilwayne.jpg" alt="" />
 						<div class="meta">
-							<p class="name">Dixon Cider</p>
-							<p class="preview">I was thinking that we could have chicken tonight, sounds good?</p>
+							<p class="name">Lil Wayne</p>
+							<p class="preview-center">Dog Dog Dog Dog Dog </p>
 						</div>
 					</div>
 				</li>
 				<li class="contact">
 					<div class="wrap">
 						<span class="contact-status online"></span>
-						<img src="http://emilcarlsson.se/assets/donnapaulsen.png" alt="" />
+						<img src="./images/Floyd-Ostrowski.png" alt="" />
 						<div class="meta">
-							<p class="name">Hugh G Rection</p>
-							<p class="preview">Mike, I know everything! I'm Donna..</p>
+							<p class="name">Floyd Ostroski</p>
+							<p class="preview">People dont fail systems do</p>
 						</div>
 					</div>
 				</li>
 				<li class="contact">
 					<div class="wrap">
 						<span class="contact-status busy"></span>
-						<img src="http://emilcarlsson.se/assets/jessicapearson.png" alt="" />
+						<img src="./images/PJVlok.jpeg" alt="" />
 						<div class="meta">
-							<p class="name">Jessica Pearson</p>
-							<p class="preview">Have you finished the draft on the Hinsenburg deal?</p>
+							<p class="name">PJ Vlok</p>
+							<p class="preview">My standard way up!</p>
 						</div>
 					</div>
 				</li>
@@ -797,7 +842,7 @@ Website: http://emilcarlsson.se/
 						<img src="http://emilcarlsson.se/assets/danielhardman.png" alt="" />
 						<div class="meta">
 							<p class="name">Daniel Hardman</p>
-							<p class="preview">We'll meet again, Mike. Tell Jessica I said 'Hi'.</p>
+							<p class="preview"></p>
 						</div>
 					</div>
 				</li>
@@ -807,7 +852,7 @@ Website: http://emilcarlsson.se/
 						<img src="http://emilcarlsson.se/assets/katrinabennett.png" alt="" />
 						<div class="meta">
 							<p class="name">Katrina Bennett</p>
-							<p class="preview">I've sent you the files for the Garrett trial.</p>
+							<p class="preview"></p>
 						</div>
 					</div>
 				</li>
@@ -817,7 +862,7 @@ Website: http://emilcarlsson.se/
 						<img src="http://emilcarlsson.se/assets/charlesforstman.png" alt="" />
 						<div class="meta">
 							<p class="name">Charles Forstman</p>
-							<p class="preview">Mike, this isn't over.</p>
+							<p class="preview"></p>
 						</div>
 					</div>
 				</li>
@@ -827,7 +872,7 @@ Website: http://emilcarlsson.se/
 						<img src="http://emilcarlsson.se/assets/jonathansidwell.png" alt="" />
 						<div class="meta">
 							<p class="name">Jonathan Sidwell</p>
-							<p class="preview"><span>You:</span> That's bullshit. This deal is solid.</p>
+							<p class="preview"><span>You:</span> </p>
 						</div>
 					</div>
 				</li>
@@ -840,8 +885,8 @@ Website: http://emilcarlsson.se/
 	</div>
 	<div class="content">
 		<div class="contact-profile">
-			<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-			<p>Harvey Specter</p>
+			<img src="./images/lilpump.jpg" alt="" />
+			<p>LIL PUMP</p>
 			<div class="social-media">
 				<i class="fa fa-facebook" aria-hidden="true"></i>
 				<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -851,36 +896,36 @@ Website: http://emilcarlsson.se/
 		<div class="messages">
 			<ul>
 				<li class="sent">
-					<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-					<p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+					<img src="./images/andersonpaak.jpg" alt="" />
+					<p>Hey man how's Harvard</p>
 				</li>
 				<li class="replies">
-					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-					<p>When you're backed against the wall, break the god damn thing down.</p>
+					<img src="./images/lilpump.jpg" alt="" />
+					<p>GUCCI GANG</p>
 				</li>
 				<li class="replies">
-					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-					<p>Excuses don't win championships.</p>
+					<img src="./images/lilpump.jpg" alt="" />
+					<p>GUCCI GANG GUCCI GANG</p>
 				</li>
 				<li class="sent">
-					<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-					<p>Oh yeah, did Michael Jordan tell you that?</p>
+					<img src="./images/andersonpaak.jpg" alt="" />
+					<p>Oh hmm... you good dog?</p>
 				</li>
 				<li class="replies">
-					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-					<p>No, I told him that.</p>
+					<img src="./images/lilpump.jpg" alt="" />
+					<p>MY B LOVE DO COCAINE</p>
 				</li>
 				<li class="replies">
-					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-					<p>What are your choices when someone puts a gun to your head?</p>
+					<img src="./images/lilpump.jpg" alt="" />
+					<p>I GOT ICE BOI</p>
 				</li>
 				<li class="sent">
-					<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-					<p>What are you talking about? You do what they say or they shoot you.</p>
+					<img src="./images/andersonpaak.jpg" alt="" />
+					<p>Bro imma call someone you trippin dog</p>
 				</li>
 				<li class="replies">
-					<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-					<p>Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+					<img src="./images/lilpump.jpg" alt="" />
+					<p>GUCCI GANG</p>
 				</li>
 			</ul>
 		</div>
