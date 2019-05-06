@@ -30,13 +30,13 @@ $app->post('/api/chgpwd', function ($request, $response, $args) { //POST example
     $pdo =$this->pdo;
     $params = $request->getParsedBody();
 	$email = $params['email'];
-    $password = $params['password'];
+    $dob = $params['dob'];
     $new_password = $params['new_password'];
 
-    $updateStatement = $pdo->update(array("password" => $new_password))
+    $updateStatement = $pdo->update(array('password' => $new_password))
                             ->table('user')
                             ->where('email', '=', $email)
-                            ->where('password', '=', $password);
+                            ->where('dob', '=', $dob);
 
 	$stmt = $updateStatement->execute();
     
