@@ -34,7 +34,7 @@
 	<div class="limiter" id="app">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(doglogin.jpg)">
+				<div class="login100-form-title" href="./assets/images/doglogin.jpg)">
 					<span class="login100-form-title-1">
 						Sign Up
 					</span>
@@ -47,33 +47,61 @@
 							name="username" placeholder="Enter username">
 						<span class="focus-input100"></span>
 					</div>
+					<div class="wrap-input100 validate-input m-b-26" data-validate="First name is required">
+						<label for="first_name" class="label-input100">First Name:</label>
+						<input v-model="first_name" class="input100 form-control" id="first_name" type="first_name"
+							name="first_name" placeholder="First Name">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-26">
+						<label for="middle_name" class="label-input100">Middle Name:</label>
+						<input v-model="middle_name" class="input100 form-control" id="middle_name" type="middle_name"
+							name="middle_name" placeholder="Middle Name">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Last Name is required">
+						<label for="last_name" class="label-input100">Last Name:</label>
+						<input v-model="last_name" class="input100 form-control" id="last_name" type="last_name"
+							name="last_name" placeholder="Last Name">
+						<span class="focus-input100"></span>
+					</div>
 					<div class="wrap-input100 validate-input m-b-18" data-validate="Email is required">
-						<label for="password" class="label-input100">Email:</label>
-						<input v-model="password" class="input100 form-control" id="pwd" type="password" name="pswd"
-							placeholder="Enter password">
+						<label for="email" class="label-input100">Email:</label>
+						<input v-model="email" class="input100 form-control" id="email" type="email" name="email"
+							placeholder="Email">
 						<span class="focus-input100"></span>
 
 					</div>
 			
 						<div class="wrap-input100 validate-input m-b-18" data-validate="Date of Birth is required">
-							<label for="password" class="label-input100">Date of Birth:</label>
-							<input v-model="password" class="input100 form-control" id="pwd" type="password" name="pswd"
-								placeholder="Enter Date of Birth">
+							<label for="dob" class="label-input100">Date of Birth:</label>
+							<input v-model="dob" class="input100 form-control" id="dob" type="dob" name="dob"
+								placeholder="YYYY-MM-DD">
 							<span class="focus-input100"></span>
 						</div>
 					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
 						<label for="password" class="label-input100">Password:</label>
 						<input v-model="password" class="input100 form-control" id="pwd" type="password" name="pswd"
-							placeholder="Enter password">
+							placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
+					<div class="flex-sb-m w-full p-b-30">
+							<div >
+								<a href="./login.html" class="txt1">
+									Login
+								</a>
+							</div>
+						</div>
+				
 	
 					<div class="container-login100-form-btn">
-						<button @click.prevent="login()" class="login100-form-btn">Sign Up!</button>
+						<button @click.prevent="signup ()" class="login100-form-btn">Sign Up!</button>
 						<!--		<button class="login100-form-btn"></i><p style="text-align:center;"<font size="3" color="white"></font></p><p>Login with Facebook</p>
-				-->
+				-->		
 					</div>
+				
 				</form>
+				
 				<div>
 					<p class="text-warning">{{msg}}</p>
 				</div>
@@ -87,20 +115,20 @@
 
 	<!--===============================================================================================-->
 	<script src="./assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
+	<!--===============================================================================================--
 	<script src="./assets/vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
+	--===============================================================================================--
 	<script src="./assets/vendor/bootstrap/js/popper.js"></script>
 	<script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
+	--===============================================================================================--
 	<script src="./assets/vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
+	--===============================================================================================--
 	<script src="./assets/vendor/daterangepicker/moment.min.js"></script>
 	<script src="./assets/vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
+	--===============================================================================================--
 	<script src="./assets/vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="./assets/js/mainsignup.js"></script>
+	--===============================================================================================-->
+	<script src="./assets/js/main.js"></script>
 
 </body>
 
